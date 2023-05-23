@@ -1,0 +1,92 @@
+@use "var" as *;
+
+html {
+  margin: 0;
+  height: 60%;
+  background-image: url(./WhatsApp\ Image\ Invalid\ date\ at\ Invalid\ date.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body {
+  margin: 20%;
+  font-family: $primary-font;
+}
+
+.container {
+  border: solid 2px $clr-secondry;
+  background-color: $clr-secondry;
+  width: 350px;
+  box-shadow: 5px 10px 8px $clr-secondry;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 55px;
+  padding-left: 55px;
+
+
+  .otef {
+    text-align: right;
+
+    h1 {
+      color: $clr-primary;
+    }
+
+    p {
+      color: $clr-primary;
+      text-align: right;
+    }
+  }
+
+  .form-container {
+  
+    label {
+      color: $clr-primary;
+      font-size: $fs-small;
+    }
+
+    input {
+      width: 250px;
+      height: 25px;
+    
+    }
+
+    .button {
+      background-color: $clr-third;
+      color: $clr-primary;
+      margin-top: 15px;
+      width: 75px;
+      height: 35px;
+      border: none;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-phone) {
+  html{
+    height: 35%;
+  }
+ body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .container{
+  width: 400px;
+  height: 60vh;
+  margin-top: 100px;
+}
+
+.otef p{
+  text-align: center;
+}
+
+}
+
+
+
+
+// .amit{
+//     @extend .button
+// }
